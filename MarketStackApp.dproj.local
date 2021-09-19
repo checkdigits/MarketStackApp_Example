@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/07/14 16:30:43.000.889,=C:\Users\victo\OneDrive\Desktop\WeatherApp\View.pas</Transaction>
+    <Transaction>2021/07/16 10:17:29.000.266,C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\NewsApp_LowCode Jul2021\NewsApp_MediaStackAPI\NewsApp.dproj=C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\NewsApp_LowCode Jul2021\NewsApp_MediaStackAPI\WeatherApp.dproj</Transaction>
+    <Transaction>2021/07/21 11:40:16.000.810,C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\PositionApp_LowCode Jul2021\PositionApp_MediaStackAPI\PositionApp.dproj=C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\PositionApp_LowCode Jul2021\PositionApp_MediaStackAPI\NewsApp.dproj</Transaction>
+    <Transaction>2021/07/22 11:18:12.000.014,C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\SERPApp_LowCode Jul2021\SERPApp_MediaStackAPI\PositionApp.dproj=C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\SERPApp_LowCode Jul2021\SERPApp_MediaStackAPI\SERPApp.dproj</Transaction>
+    <Transaction>2021/08/10 10:33:13.000.429,C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\ipstack_LowCode Aug2021\ipstackApp_MediaStackAPI\SERPApp.dproj=C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\ipstack_LowCode Aug2021\ipstackApp_MediaStackAPI\ipstackApp.dproj</Transaction>
+    <Transaction>2021/08/26 00:31:21.000.308,C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\CryptoCurrencyRates_LowCode Aug2021\CryptoCurrencyRatesApp\CryptoCurrencyRatesApp.dproj=C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\CryptoCurrencyRates_LowCode Aug2021\CryptoCurrencyRatesApp\ipstackApp.dproj</Transaction>
+    <Transaction>2021/08/30 10:07:49.000.045,C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\CryptoCurrencyRates_LowCode Aug2021\CryptoCurrencyRatesApp\CurrencyRatesApp.dproj=C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\CryptoCurrencyRates_LowCode Aug2021\CryptoCurrencyRatesApp\CryptoCurrencyRatesApp.dproj</Transaction>
+    <Transaction>2021/09/05 10:55:24.000.411,C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\MarketStack_LowCode Sep2021\MarketStackApp\CurrencyRatesApp.dproj=C:\Users\victo\Dropbox\TKS Software\upwork\BlogWriting Sep2020\MarketStack_LowCode Sep2021\MarketStackApp\MarketStackApp.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

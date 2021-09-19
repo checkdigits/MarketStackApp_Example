@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5010DC64-BBB3-4FC8-8710-5F2D5D6FD3A3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Test\WeatherApp_tests.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WeatherApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="WeatherApp_tests">
+        <MSBuild Projects="Test\WeatherApp_tests.dproj"/>
+    </Target>
+    <Target Name="WeatherApp_tests:Clean">
+        <MSBuild Projects="Test\WeatherApp_tests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WeatherApp_tests:Make">
+        <MSBuild Projects="Test\WeatherApp_tests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WeatherApp">
+        <MSBuild Projects="WeatherApp.dproj"/>
+    </Target>
+    <Target Name="WeatherApp:Clean">
+        <MSBuild Projects="WeatherApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WeatherApp:Make">
+        <MSBuild Projects="WeatherApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="WeatherApp_tests;WeatherApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="WeatherApp_tests:Clean;WeatherApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="WeatherApp_tests:Make;WeatherApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,116 @@
+inherited NewFormFrame: TNewFormFrame
+  inherited MainLayout: TGridPanelLayout
+    ControlCollection = <
+      item
+        Column = 0
+        Control = HeaderRect
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = Panel1
+        Row = 1
+      end>
+    RowCollection = <
+      item
+        Value = 6.537318864232710000
+      end
+      item
+        Value = 93.462681135767280000
+      end
+      item
+        SizeStyle = Auto
+      end
+      item
+        SizeStyle = Auto
+      end>
+    inherited HeaderRect: TRectangle
+      inherited CaptionLbl: TLabel
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'New Form'
+      end
+    end
+    object Panel1: TPanel
+      Anchors = []
+      Position.X = 10.000000000000000000
+      Position.Y = 48.187030792236330000
+      Size.Width = 308.000000000000000000
+      Size.Height = 529.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label3: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Text = 'API Key'
+        TabOrder = 0
+      end
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Text = '1c986c0750d5080fc4cfbbdfd84c712e'
+        Position.X = 80.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Query: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 40.000000000000000000
+        Text = 'Symbols'
+        TabOrder = 2
+      end
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Text = 'AAPL'
+        Position.X = 80.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Button1: TButton
+        Position.X = 16.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 281.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Send Request'
+        OnClick = Button1Click
+      end
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        TextSettings.WordWrap = True
+        Position.X = 16.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 281.000000000000000000
+        Size.Height = 409.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Viewport.Width = 277.000000000000000000
+        Viewport.Height = 405.000000000000000000
+      end
+    end
+  end
+  object RESTClient1: TRESTClient
+    BaseURL = 'http://api.weatherstack.com/current'
+    Params = <>
+    Left = 64
+    Top = 264
+  end
+  object RESTRequest1: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    Left = 144
+    Top = 264
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 232
+    Top = 264
+  end
+end
